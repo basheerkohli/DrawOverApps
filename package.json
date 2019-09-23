@@ -1,0 +1,17 @@
+{
+  "name": "cordova.plugin.DrawOverApps",
+  "version": "1.0.0",
+  "description": "Plugin for DrawOverApps permission",
+  "cordova": {
+    "id": "cordova.plugin.DrawOverApps",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Syed Basheer Ali",
+  "license": "ISC"
+}

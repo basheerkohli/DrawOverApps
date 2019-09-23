@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova.plugin.DrawOverApps" version="1.0.0" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>DrawOverApps</name>
+    <js-module name="DrawOverApps" src="www/DrawOverApps.js">
+        <clobbers target="cordova.plugins.DrawOverApps" />
+    </js-module>
+    <platform name="android">
+        <framework src="src/android/DrawOverApps.gradle" custom="true" type="gradleReference" />
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="DrawOverApps">
+                <param name="android-package" value="cordova.plugin.DrawOverApps.DrawOverApps" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+        </config-file>
+        <source-file src="src/android/DrawOverApps.java" target-dir="src/cordova/plugin/DrawOverApps/DrawOverApps" />
+    </platform>
+</plugin>
